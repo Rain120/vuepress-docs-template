@@ -34,7 +34,7 @@ npm run docs
 
 ## 配置别名
 
-我们不支持中文名文件夹, 所以你需要给文件名配置别名, 只需要在[docs/.vuepress/utils/alias.js](#docs/.vuepress/utils/alias.js)中配置 `key-value`值即可
+我们不支持中文名文件夹, 所以你需要给文件名配置别名, 只需要在 `docs/.vuepress/utils/alias.js` 中配置 `key-value`值即可
 
 ::: tip
 alias 的顺序就是文档的顺序
