@@ -1,24 +1,13 @@
 const path = require('path');
 const plugins = require('./utils/plugins');
-const { sidebarHelper } = require('./utils/sidebarHelper');
+const { sidebarHelper, sortSidebar } = require('./utils/sidebarHelper');
 const nav = require('./utils/nav');
 
 /**
- * @description [guide, how-to-write-docs, ...]
- * 特殊处理文档顺序, 如你不需要，忽略即可
+ * sortSidebar 根据 alias 设置顺序，默认顺序为 文件夹名字的顺序
  */
-// const docs = sidebarHelper();
-// const sidebar = [];
-// docs.map(item => {
-//   if (item.path.includes('guide') || item.path.includes('how-to-write-docs')) {
-//       sidebar.unshift(item)
-//   } else {
-//       sidebar.push(item)
-//   }
-// });
-// [sidebar[1], sidebar[0]] = [sidebar[0], sidebar[1]];
 
-const sidebar = sidebarHelper();
+const sidebar = sortSidebar(sidebarHelper());
 
 module.exports = {
   // 替换成你的仓库名
