@@ -1,8 +1,9 @@
-# 1.0.0 (2020-06-25)
+# 1.0.0 (2020-06-27)
 
 
 ### Bug Fixes
 
+* husky pre push hooks ([eca8aab](https://github.com/Rain120/vuepress-docs-template/commit/eca8aab7b3ec4c0da58180108853cb45dbb18d1d))
 * husky pre push hooks ([62ff12a](https://github.com/Rain120/vuepress-docs-template/commit/62ff12a8efb75806794b78a86c186fa9da72c355))
 * update the docs about hwo to write the docs ([e0c8d13](https://github.com/Rain120/vuepress-docs-template/commit/e0c8d13948d9e57175d5d8551238ddcf75b782d7))
 
