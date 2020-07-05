@@ -161,7 +161,8 @@ If you don't want to format your commit and changelog, there 3 **package** you c
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash ./scripts/deploy.sh",
+    "remote": "bash ./scripts/add-remote.sh"
   }
 }
 ```

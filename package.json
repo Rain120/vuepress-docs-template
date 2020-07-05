@@ -15,7 +15,8 @@
     "docs": "npm run plop docs",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash ./scripts/deploy.sh",
+    "remote": "bash ./scripts/add-remote.sh"
   },
   "keywords": [
     "docs",

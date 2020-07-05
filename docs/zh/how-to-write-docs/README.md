@@ -81,10 +81,10 @@ Eg:
 `Eg:`
 
 ```md {1}
-<<< @/deploy.sh
+<<< @/scripts/deploy.sh
 ```
 
-<<< @/deploy.sh {13}
+<<< @/scripts/deploy.sh {13}
 
 ## 数学公式
 
