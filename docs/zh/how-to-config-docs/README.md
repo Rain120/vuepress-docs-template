@@ -75,18 +75,40 @@
 
 ```sh
 docs/.vuepress/utils
-├── alias.js // 别名
+├── alias.json // 别名
 ├── copy.js // 复制添加著作信息
 ├── nav.js // navbar
 ├── plugins.js // 插件
 └── sidebarHelper.js // 自动生成sidebar
 ```
 
-**Alias Note**
+## 别名配置
 
-我们不支持中文名文件夹, 所以你需要给文件名配置别名, 只需要在`docs/.vuepress/utils/alias.js`中配置 `key-value`值即可
+### 简约配置方式
 
-<<< @/docs/.vuepress/utils/alias.js
+::: tip
+通过使用 [新建文件](../how-to-write-docs/#新建文件) 的脚本来动态配置 `alias`, 妈妈再也不用担心我找不到配置了。
+:::
+
+我们不支持中文名文件夹, 所以你需要给文件名配置别名, 只需要在`docs/.vuepress/utils/alias.json`中配置 `key-value`值即可
+
+::: tip
+`alias` 的顺序就是文档的顺序
+```
+Eg:
+  p2: p2
+  p1: p1
+  p1-c2: p1-c2
+  p1-c1: p1-c1
+  -> 菜单顺序是
+  p2
+  p1
+    c2
+    c1
+```
+:::
+
+<<< @/docs/.vuepress/utils/alias.json
 
 **SidebarHelper Note**
 

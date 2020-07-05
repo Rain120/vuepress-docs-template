@@ -90,7 +90,7 @@ tree . -al 3 -I "node_modules|dist|images|.git|.DS_Store"
 │   │   │   └── index.styl
 │   │   ├── theme
 │   │   └── utils
-│   │       ├── alias.js
+│   │       ├── alias.json
 │   │       ├── copy.js
 │   │       ├── nav.js
 │   │       ├── plugins.js

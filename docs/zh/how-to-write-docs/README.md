@@ -12,13 +12,21 @@
 请保证每一个文件夹都有一个 `README.md`文件
 :::
 
+**手动创建**
+
 ```sh
 touch docs/zh/test/README.md
 ```
 
-自动生成 `docs model`
+**自动生成 `docs model`**
 ```sh
 npm run docs
+```
+
+```sh
+? please input the docs model name:  model
+? please input the docs model alias name (default same as model name)? 
+? generator model path (etc: docs/zh/model) ? docs/zh
 ```
 
 `Eg: File Path`
@@ -34,10 +42,17 @@ npm run docs
 
 ## 配置别名
 
+### 简约配置方式
+
+::: tip
+通过使用 [新建文件](#新建文件) 的脚本来动态配置 `alias`, 妈妈再也不用担心我找不到配置了。
+:::
+
 我们不支持中文名文件夹, 所以你需要给文件名配置别名, 只需要在 `docs/.vuepress/utils/alias.js` 中配置 `key-value`值即可
 
 ::: tip
-alias 的顺序就是文档的顺序
+`alias` 的顺序就是文档的顺序
+```
 Eg:
   p2: p2
   p1: p1
@@ -48,9 +63,10 @@ Eg:
   p1
     c2
     c1
+```
 :::
 
-<<< @/docs/.vuepress/utils/alias.js
+<<< @/docs/.vuepress/utils/alias.json
 
 ## 图片
 
