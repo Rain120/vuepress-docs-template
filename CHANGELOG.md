@@ -1,4 +1,4 @@
-# 1.0.0 (2020-07-05)
+# 1.0.0 (2020-07-11)
 
 
 ### Bug Fixes
@@ -13,6 +13,7 @@
 * add editorconfig for limit code style in editor ([4c82fb7](https://github.com/Rain120/vuepress-docs-template/commit/4c82fb723e34347e5485b1987618bd27dd79c6ff))
 * add scripts about add-remote ([cf4a40f](https://github.com/Rain120/vuepress-docs-template/commit/cf4a40f498d3e43ed55c1057330c697b2ea42dae))
 * plop auto create docs model ([1f5a2f9](https://github.com/Rain120/vuepress-docs-template/commit/1f5a2f94bbd7a430bbfbb48a09718b8ec9d14190))
+* plop new docs set alias; update docs about alias ([e739f01](https://github.com/Rain120/vuepress-docs-template/commit/e739f0140ca2a680539cef073fd8e9325f0f4362))
 * sort the sidebar menu by alias ([ac74c76](https://github.com/Rain120/vuepress-docs-template/commit/ac74c76c4d3968dfbb14b42d6e174b738c196025))
 * vuepress docs template ([77f3649](https://github.com/Rain120/vuepress-docs-template/commit/77f36499665edfad4f0333d6a55f54a541177f06))
 
