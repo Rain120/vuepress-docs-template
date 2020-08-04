@@ -156,6 +156,11 @@ This is a warning
 ::: danger
 This is a dangerous warning
 :::
+
+:::theorem 换个名字
+自定义的容器哦~, [Here](../../.vuepress/utils/plugins.js)
+
+:::
 ```
 
 ::: tip
@@ -169,6 +174,12 @@ This is a warning
 ::: danger
 This is a dangerous warning
 :::
+
+:::theorem 换个名字
+自定义的容器哦~, [Here](../../.vuepress/utils/plugins.js)
+:::
+
+<<< @/docs/.vuepress/utils/plugins.js{3}
 
 ## Emoji
 
