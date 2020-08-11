@@ -2,12 +2,19 @@ const path = require('path');
 const plugins = require('./utils/plugins');
 const { sidebarHelper, sortSidebar } = require('./utils/sidebarHelper');
 const nav = require('./utils/nav');
+const slugify = require('@vuepress/shared-utils').slugify
 
 /**
  * sortSidebar 根据 alias 设置顺序，默认顺序为 文件夹名字的顺序
  */
 
 const sidebar = sortSidebar(sidebarHelper());
+
+const SPECIAL_HEADINGS = {
+  '!': 'exclamation',
+  '?': 'question',
+  '+ -': 'plus-and-minus',
+};
 
 module.exports = {
   // 替换成你的仓库名
@@ -43,12 +50,32 @@ module.exports = {
   // },
   locales: {
     '/': {
-      lang: 'zh-CN', 
+      lang: 'zh-CN',
     }
   },
   // markdown
   markdown: {
     lineNumbers: true,
+		/**
+		 * 解决一个 "无实质内容的标题导致 permalink 出错" 的问题,
+		 * 目前发现有若干个有点问题的, 如 `!`
+		 *
+		 * @todo: 如果开始有多类似的个例, 可以引入特殊的 "heading anchor" 格式, 并统一处理
+		 *
+		 * 参考 : http://caibaojian.com/vuepress/config/#markdown-slugify
+		 *
+		 * @param {string} heading
+		 * @return {string|*|string}
+		 */
+		slugify: heading => {
+				const originResult = slugify(heading)
+
+			const trimmedHeading = (heading || '').trim()
+			if (trimmedHeading in SPECIAL_HEADINGS) {
+				return SPECIAL_HEADINGS[(heading || '').trim()] || ''
+			}
+			return originResult
+		},
     anchor: {
       permalink: true,
     },
@@ -66,15 +93,15 @@ module.exports = {
   themeConfig: {
     theme: 'vue',
     repo: 'https://github.com/Rain120/vuepress-docs-template',
-    repoLabel: 'Repo',
+    // repoLabel: 'Repo',
 
-    displayAllHeaders: true,
+    // displayAllHeaders: true,
     sidebar,
     nav,
 
     // polyfill IE
     evergreen: true,
-      
+
     // search
     search: true,
     searchMaxSuggestions: 10,

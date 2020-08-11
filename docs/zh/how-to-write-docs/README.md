@@ -188,3 +188,11 @@ This is a dangerous warning
 ```
 
 :tada: :100:
+
+## GitHub Action 配置
+
+首先, 先在 [Here](https://github.com/settings/tokens) 生成 `personal access token`, 然后在你的项目中设置 `secrets` 即可, 地址是 `https://github.com/Rain120/` **your-project-name** `/settings/secrets`
+
+![personal-access-token.png](~@images/docs/zh/how-to-write-docs/images/personal-access-token.png)
+
+![new-secrects.png](~@images/docs/zh/how-to-write-docs/images/new-secrects.png)
