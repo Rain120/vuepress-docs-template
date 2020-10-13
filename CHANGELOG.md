@@ -1,4 +1,4 @@
-# 1.0.0 (2020-09-19)
+# [1.0.0](https://github.com/Rain120/vuepress-docs-template/compare/77f36499665edfad4f0333d6a55f54a541177f06...v1.0.0) (2020-09-19)
 
 
 ### Bug Fixes

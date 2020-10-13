@@ -181,6 +181,36 @@ This is a dangerous warning
 
 <<< @/docs/.vuepress/utils/plugins.js{3}
 
+## Math Latex
+
+### 行内语法
+使用单个 `$` 围绕一段 `latex` 语法进行内联渲染。
+
+输入:
+
+```md
+$e^{i\pi}+1=0$
+```
+
+输出:
+
+$e^{i\pi}+1=0$
+
+### 块语法
+
+块语法使用两个符号 `$$`，它将会带来更大的符号和居中显示。
+
+输入:
+
+```md
+$$\frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right) 
+= \left(\frac {y^{\omega}} {\omega}\right) \left\{(\log y)^r + \sum_{i=1}^r \frac {(-1)^i r \cdots (r-i+1) (\log y)^{r-i}} {\omega^i} \right\}$$
+```
+输出:
+
+$$\frac {\partial^r} {\partial \omega^r} \left(\frac {y^{\omega}} {\omega}\right) 
+= \left(\frac {y^{\omega}} {\omega}\right) \left\{(\log y)^r + \sum_{i=1}^r \frac {(-1)^i r \cdots (r-i+1) (\log y)^{r-i}} {\omega^i} \right\}$$
+
 ## Emoji
 
 ```md
